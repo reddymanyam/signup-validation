@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "e6c5",
+      "name": "reddy",
+      "email": "reddy123@gmail.com",
+      "password": "redd123",
+      "confirmPassword": "redd123"
+    }
+  ]
+}
