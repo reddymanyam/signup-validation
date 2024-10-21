@@ -6,6 +6,27 @@
       "email": "reddy123@gmail.com",
       "password": "redd123",
       "confirmPassword": "redd123"
+    },
+    {
+      "id": "e179",
+      "name": "Reddy",
+      "email": "reddy234@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345"
+    },
+    {
+      "id": "03d7",
+      "name": "reddy111",
+      "email": "reddy111@gmail.com",
+      "password": "reddy123",
+      "confirmPassword": "reddy123"
+    },
+    {
+      "id": "5990",
+      "name": "reddy1",
+      "email": "reddy123456@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456"
     }
   ]
 }

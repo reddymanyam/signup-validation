@@ -87,11 +87,11 @@ export default function Auth() {
             return;
         }
         try {
-            await axios.post("http://localhost:8000/users", formData);
+            await axios.post("http://localhost:5000/users", formData);
             alert('Registration successful!');
             setValue(1); 
         } catch (err) {
-            console.error(err);
+            console.error('Error:', err.response ? err.response.data : err.message);
             alert('Please fill in the details correctly.');
         }
     };
