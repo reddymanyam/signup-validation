@@ -106,9 +106,7 @@ export default function Auth() {
                 }
             });
 
-            const user = response.data.find(
-                (user) => user.email === formData.email && user.password === formData.password
-            );
+            const user = response.data.find((user) => (user.email === formData.email) && (user.password === formData.password));
 
             if (user) {
                 alert('Login successful!');
