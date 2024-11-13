@@ -99,7 +99,7 @@ export default function Auth() {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.get("http://localhost:8000/users", {
+            const response = await axios.get("http://localhost:5000/users", {
                 params: {
                     email: formData.email,
                     password: formData.password
