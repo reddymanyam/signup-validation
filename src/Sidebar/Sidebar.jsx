@@ -24,14 +24,12 @@ const Sidebar = () => {
   return (
     <Box sx={{height:"100vh", display:"flex", width:"100%" }}>
 
-    <Box sx={{width: isOpen ? "12%" : "5%", transition: 'width 0.4s', backgroundColor:"lightblue" ,overflowY:"scroll", position:"fixed", top:0, left:0, zIndex:900, height:"100%"}}>
-        <Box sx={{display:"flex", justifyContent:"flex-end"}}>
-        <IconButton onClick={toggleButton}>
+    <Box sx={{width: isOpen ? "12%" : "5%", transition: 'width 0.4s', backgroundColor:"lightblue" , position:"fixed", top:0, left:0, height:"100%"}}>
+        <IconButton onClick={toggleButton} sx={{float:"right", cursor:"pointer", zIndex:100}}>
             <MenuIcon />
         </IconButton>
-        </Box>
 
-        <List>
+        <List sx={{}}>
             <CustomListItem>
                 <ListItemButton>
                     <CustomListItemIcon>
@@ -107,7 +105,7 @@ const Sidebar = () => {
             </CustomListItem>
         </List>
     </Box>
-    <Box sx={{backgroundColor:"lightcoral",  transition: "width 0.4s ",flexGrow: 1, marginLeft:isOpen ? "12%" : "5%" }}>
+    <Box sx={{backgroundColor:"lightcoral",  transition: "padding-left 0.4s ",flexGrow: 1, paddingLeft:isOpen ? "12%" : "5%" }}>
          <h1>Hello world..!</h1>
     </Box>
     </Box>
