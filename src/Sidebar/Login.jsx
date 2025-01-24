@@ -15,15 +15,21 @@ const Login = () => {
     // const[email, setEmail] = useState("");
     // const[number, setNumber] = useState();
     
+   const handleChange = (field) => (e) =>{
+    setValues((prevValues) => (
+      {...prevValues, [field]: e.target.value}
+    ));
+   };
+
     const handleLogin = () =>{
         alert(`FirstName: ${values.firstname} \n LastName: ${values.lastname}`);
     }
   return (
     <>
-     <TextField label="firstname" value={values.firstname} onChange={(e) => setValues({...values, firstname : e.target.value})} />
-     <TextField label="lastname" value={values.lastname} onChange={(e) => setValues({...values, lastname:e.target.value})} />
-     <TextField label="email" value={values.email} onChange={(e)=> setValues({...values, email:e.target.value})} />
-     <TextField type='number' label="number" value={values.number} onChange={(e)=>setValues({...values, number:e.target.value})} />  
+     <TextField label="firstname" value={values.firstname} onChange={handleChange} />
+     <TextField label="lastname" value={values.lastname} onChange={handleChange} />
+     <TextField label="email" value={values.email} onChange={handleChange} />
+     <TextField type='number' label="number" value={values.number} onChange={handleChange} />  
      <Button onClick={handleLogin}>Login</Button>
     </>
   )
